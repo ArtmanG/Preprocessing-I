@@ -187,10 +187,20 @@ nav {
   justify-content: flex-end;
   padding: 3% 0;
 }
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-between;
+  }
+}
 nav a {
   text-decoration: none;
   padding: 1%;
   color: #000000;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.3rem;
+  }
 }
 /*------------------------- HEADER -------------------------*/
 header {
@@ -202,6 +212,7 @@ header p {
   margin: 0% 4% 3% 0;
   padding: 3% 0 0 0;
   border-top: 1px solid #2e2e2e;
+  line-height: 1.5;
 }
 header button {
   background-color: grey;
@@ -218,31 +229,65 @@ header button {
   justify-content: space-between;
   margin-bottom: 4%;
 }
+@media (max-width: 500px) {
+  .img-contact {
+    flex-direction: column;
+    margin-bottom: 1%;
+  }
+}
 .img-contact img {
   width: 100%;
   margin: 10% 0 0 0;
 }
+@media (max-width: 500px) {
+  .img-contact img {
+    margin: 10% 0 0 75%;
+  }
+}
 .img-contact h1 {
   margin-top: 10%;
 }
-.img {
+@media (max-width: 500px) {
+  .img-contact h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+  }
+}
+.img-contact .img {
   width: 40%;
 }
-.contact {
+.img-contact .contact {
   margin: 15% 0 10%;
   line-height: 2;
 }
-.contact h2 {
+@media (max-width: 500px) {
+  .img-contact .contact {
+    margin: 5% 0 2%;
+  }
+}
+.img-contact .contact h2 {
   display: flex;
   justify-content: center;
 }
-.contact li {
+.img-contact .contact li {
   display: flex;
   justify-content: flex-end;
 }
-.contact a {
+@media (max-width: 500px) {
+  .img-contact .contact li {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}
+.img-contact .contact a {
   text-decoration: none;
   color: #000000;
+}
+@media (max-width: 500px) {
+  .img-contact .contact a {
+    font-size: 1.4rem;
+  }
 }
 /*------------------------- MAIN-CONTENT -------------------------*/
 .main-content {
@@ -250,15 +295,37 @@ header button {
   justify-content: space-between;
   margin: 4% 0;
 }
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
 .main-content h2 {
   padding: 0 0 3% 0;
+}
+@media (max-width: 500px) {
+  .main-content h2 {
+    padding: 3% 0;
+    text-align: center;
+  }
 }
 .left p {
   line-height: 2.4;
 }
+@media (max-width: 500px) {
+  .left p {
+    line-height: 2;
+  }
+}
 .left,
 .right {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .left,
+  .right {
+    width: 100%;
+  }
 }
 .skills p {
   border: 0.5px solid #dcdcdc;
@@ -272,6 +339,11 @@ header button {
   padding: 2%;
   border-top: 1px solid black;
 }
+@media (max-width: 500px) {
+  .work-history h2 {
+    padding: 3%;
+  }
+}
 .row {
   display: flex;
   justify-content: space-around;
@@ -279,12 +351,24 @@ header button {
   padding-bottom: 2%;
   border-bottom: 1px solid black;
 }
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+}
 .box {
   width: 24%;
   border: 0.5px solid #dcdcdc;
   padding: 1%;
   border-radius: 10%;
   background-color: #c4d9ee;
+}
+@media (max-width: 500px) {
+  .box {
+    width: 100%;
+    padding: 5%;
+  }
 }
 .box h3 {
   display: flex;
@@ -300,7 +384,6 @@ header button {
   line-height: 1.5;
   padding: 0 0 0 5%;
 }
-/*------------------------- CONTACT -------------------------*/
 /*------------------------- FOOTER -------------------------*/
 footer {
   background-color: grey;
