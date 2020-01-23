@@ -305,7 +305,7 @@ header button {
 }
 @media (max-width: 500px) {
   .main-content h2 {
-    padding: 3% 0;
+    padding: 5% 0;
     text-align: center;
   }
 }
@@ -332,6 +332,11 @@ header button {
   padding: 1%;
   padding: 3% 7%;
 }
+@media (max-width: 500px) {
+  .right {
+    margin-bottom: 5%;
+  }
+}
 /*------------------------- WORK-HISTORY -------------------------*/
 .work-history h2 {
   display: flex;
@@ -341,7 +346,7 @@ header button {
 }
 @media (max-width: 500px) {
   .work-history h2 {
-    padding: 3%;
+    padding: 7% 0 5%;
   }
 }
 .row {
@@ -368,6 +373,7 @@ header button {
   .box {
     width: 100%;
     padding: 5%;
+    margin: 2%;
   }
 }
 .box h3 {
@@ -390,4 +396,10 @@ footer {
   text-align: center;
   margin: 3% 0 0;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin: 6% 0 0;
+    padding: 4%;
+  }
 }
