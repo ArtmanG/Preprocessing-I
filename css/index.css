@@ -224,6 +224,9 @@ header button {
   border: 0.1rem solid grey;
   border-radius: 0.5rem;
 }
+header button:hover {
+  background-color: #9a9a9a;
+}
 .img-contact {
   display: flex;
   justify-content: space-between;
@@ -309,31 +312,31 @@ header button {
     text-align: center;
   }
 }
-.left p {
+.main-content .left p {
   line-height: 2.4;
 }
 @media (max-width: 500px) {
-  .left p {
+  .main-content .left p {
     line-height: 2;
   }
 }
-.left,
-.right {
+.main-content .left,
+.main-content .right {
   width: 48%;
 }
 @media (max-width: 500px) {
-  .left,
-  .right {
+  .main-content .left,
+  .main-content .right {
     width: 100%;
   }
 }
-.skills p {
+.main-content .skills p {
   border: 0.5px solid #dcdcdc;
   padding: 1%;
   padding: 3% 7%;
 }
 @media (max-width: 500px) {
-  .right {
+  .main-content .right {
     margin-bottom: 5%;
   }
 }

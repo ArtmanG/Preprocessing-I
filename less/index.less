@@ -77,10 +77,6 @@ html, body {
 	padding: 1%;
 }
 
-.work-history(){
-	
-}
-
 /*------------------------- UNIVERSAL -------------------------*/
 
 html {
@@ -176,6 +172,10 @@ header {
 		margin: 0 0 4% 0;
 		border: .1rem solid @alt-bg-color;
 		border-radius: .5rem;
+
+		&:hover {
+			background-color: lighten(@alt-bg-color, 10%);
+		}
 	}
 }
 
@@ -264,34 +264,36 @@ header {
 			text-align: center;
 		}
 	}
-}
 
-.left p {
-	line-height: 2.4;
-
+	.left p {
+		line-height: 2.4;
+	
+		@media(max-width: 500px){
+			line-height: 2;
+		}
+	}
+	
+	.left, .right {
+		width: 48%;
+	
+		@media(max-width: 500px){
+			width: 100%;
+		}
+	}
+	
+	.skills p {
+		.border();
+		padding: 3% 7%;
+	}
+	
 	@media(max-width: 500px){
-		line-height: 2;
+		.right{
+			margin-bottom: 5%;
+		}
 	}
 }
 
-.left, .right {
-	width: 48%;
 
-	@media(max-width: 500px){
-		width: 100%;
-	}
-}
-
-.skills p {
-	.border();
-	padding: 3% 7%;
-}
-
-@media(max-width: 500px){
-	.right{
-		margin-bottom: 5%;
-	}
-}
 
 /*------------------------- WORK-HISTORY -------------------------*/
 .work-history h2 {
