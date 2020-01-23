@@ -159,10 +159,7 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 p {
   font-size: 1.4rem;
@@ -181,7 +178,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 3%;
+  padding: 3% 0;
 }
 nav a {
   text-decoration: none;
@@ -194,12 +191,8 @@ header {
   font-size: 1.6rem;
   padding: 0 0 2% 4%;
 }
-header img {
-  width: 40%;
-  margin: 10% 0 0 0;
-}
 header h1 {
-  margin: 0 0 3% 0;
+  margin: 0;
 }
 header p {
   color: #000000;
@@ -217,11 +210,39 @@ header button {
   border: 0.1rem solid grey;
   border-radius: 0.5rem;
 }
+.img-contact {
+  display: flex;
+  justify-content: space-between;
+}
+.img {
+  width: 63%;
+}
+.img-contact img {
+  width: 70%;
+  margin: 10% 0 0 0;
+}
+.contact {
+  width: 70%;
+  margin: 5% 10% 10% 0;
+  line-height: 2;
+}
+.contact h2 {
+  display: flex;
+  justify-content: center;
+}
+.contact li {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact a {
+  text-decoration: none;
+  color: #000000;
+}
 /*------------------------- MAIN-CONTENT -------------------------*/
 .main-content {
   display: flex;
   justify-content: space-between;
-  margin: 5% 0;
+  margin: 4% 0;
 }
 .main-content h2 {
   padding: 0 0 3% 0;
@@ -232,17 +253,39 @@ header button {
 }
 .skills p {
   border: 0.5px solid #dcdcdc;
+  padding: 1%;
   padding: 3% 7%;
 }
 /*------------------------- WORK-HISTORY -------------------------*/
-.work-history {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-h3 {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.work-history h2 {
+  display: flex;
+  justify-content: center;
   padding: 2%;
+  border-top: 1px solid black;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+.box {
+  width: 24%;
+  border: 0.5px solid #dcdcdc;
+  padding: 1%;
+  border-radius: 10%;
+  background-color: #c4d9ee;
+}
+.box h3 {
+  display: flex;
+  justify-content: center;
 }
 /*------------------------- CONTACT -------------------------*/
 /*------------------------- FOOTER -------------------------*/
+footer {
+  background-color: grey;
+  text-align: center;
+  margin: 3% 0 0;
+  padding: 2%;
+}

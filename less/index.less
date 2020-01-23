@@ -74,7 +74,7 @@ html, body {
 
 .border(){
 	border: .5px solid rgb(220, 220, 220);
-	padding: 3% 7%;
+	padding: 1%;
 }
 
 .work-history(){
@@ -104,11 +104,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.5rem;
-}
-
-h4 {
-	font-size: 1.5rem;
+	font-size: 2.0rem;
 }
 
 p {
@@ -132,7 +128,7 @@ nav {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	padding: 3%;
+	padding: 3% 0;
 
 	a {
 		text-decoration: none;
@@ -149,13 +145,8 @@ header {
 	padding: 0 0 2% 4%;
 }
 
-header img {
-	width: 40%;
-	margin: 10% 0 0 0; // T R B L
-}
-
 header h1 {
-	margin: 0 0 3% 0;
+	margin: 0;
 }
 
 header p {
@@ -176,12 +167,45 @@ header button {
 	border-radius: .5rem;
 }
 
+.img-contact {
+	display: flex;
+	justify-content: space-between;
+}
+.img {
+	width: 63%;
+}
+
+.img-contact img {
+	width: 70%;
+	margin: 10% 0 0 0;
+}
+
+.contact {
+	width: 70%;
+	margin: 5% 10% 10% 0;
+	line-height: 2;
+}
+
+.contact h2 {
+	.center();
+}
+
+.contact li {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contact a {
+	text-decoration: none;
+	color: @title-color;
+}
+
 /*------------------------- MAIN-CONTENT -------------------------*/
 
 .main-content {
 	display: flex;
 	justify-content: space-between;
-	margin: 5% 0;
+	margin: 4% 0;
 }
 
 .main-content h2 {
@@ -194,17 +218,42 @@ header button {
 
 .skills p {
 	.border();
+	padding: 3% 7%;
 }
 
 
 /*------------------------- WORK-HISTORY -------------------------*/
-.work-history {
-	display: flex;
+.work-history h2 {
+	.center();
+	padding: 2%;
+	border-top: 1px solid black;
+}
 
+.row {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 2%;
+	border-bottom: 1px solid black;
+}
+
+.box {
+	width: 24%;
+	.border();
+	border-radius: 10%;
+	background-color: @bg-color;
+}
+
+.box h3 {
+	.center();
+}
 
 /*------------------------- CONTACT -------------------------*/
 
 /*------------------------- FOOTER -------------------------*/
-
-text-align: center;
-//
+footer {
+	background-color: @alt-bg-color;
+	text-align: center;
+	margin: 3% 0 0;
+	padding: 2%;
+}
