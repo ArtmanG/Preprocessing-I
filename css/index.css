@@ -129,15 +129,13 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
 }
 /*------------------------- UNIVERSAL -------------------------*/
-.container {
-  width: 80%;
-}
 html {
   font-size: 62.5%;
 }
@@ -152,11 +150,28 @@ h4,
 h5,
 h6 {
   font-family: 'Alata', sans-serif;
-  color: #2e2e2e;
+  color: #000000;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 p {
+  font-size: 1.4rem;
   font-family: 'Fira Sans', sans-serif;
-  color: #8d8d8d;
+  color: #2e2e2e;
+  line-height: 1.2;
+}
+a {
+  font-size: 1.7rem;
+}
+.container {
+  width: 80%;
 }
 /*------------------------- NAV -------------------------*/
 nav {
@@ -168,8 +183,59 @@ nav {
 nav a {
   text-decoration: none;
   padding: 1%;
+  color: #000000;
 }
 /*------------------------- HEADER -------------------------*/
+header {
+  background-color: #c4d9ee;
+  font-size: 1.6rem;
+  padding: 0 0 2% 4%;
+}
+header img {
+  width: 40%;
+  margin: 10% 0 0 0;
+}
+header h1 {
+  margin: 0 0 3% 0;
+}
+header p {
+  color: #000000;
+  margin: 0% 4% 3% 0;
+  padding: 3% 0 0 0;
+  border-top: 1px solid #2e2e2e;
+}
+header button {
+  background-color: grey;
+  font-size: 1.8rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  padding: 1.5% 5%;
+  margin: 0 0 4% 0;
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+}
 /*------------------------- MAIN-CONTENT -------------------------*/
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+.main-content h2 {
+  padding: 0 0 3% 0;
+}
+.left {
+  width: 48%;
+}
+.right {
+  width: 48%;
+}
+.skills p {
+  border: 0.5px solid #dcdcdc;
+  padding: 2.5%;
+}
 /*------------------------- WORK-HISTORY -------------------------*/
+.work-history {
+  display: flex;
+}
+/*------------------------- CONTACT -------------------------*/
 /*------------------------- FOOTER -------------------------*/

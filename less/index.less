@@ -50,42 +50,40 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
-
-/*------------------------- UNIVERSAL -------------------------*/
-
-
-@main-color: rgb(141, 141, 141);
-@title-color: rgb(46, 46, 46);
+// Variables
+@main-color: rgb(46, 46, 46);
+@title-color: rgb(0, 0, 0);
 @main-font: 'Fira Sans', sans-serif;
 @title-font: 'Alata', sans-serif;
+@bg-color: rgb(196, 217, 238);
+@alt-bg-color: grey;
 
+// Mix-ins
 .center(){
 	display: flex;
 	justify-content: center;
 }
 
-.bordered(){
+.border(){
 	border: 2px solid black;
 	padding: 2%;
 }
 
-.container {
-	width: 80%;
-}
-
+/*------------------------- UNIVERSAL -------------------------*/
 html {
 	font-size: 62.5%;
 }
 
 body {
- .center();
+	.center();
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,30 +91,115 @@ h1, h2, h3, h4, h5, h6 {
 	color: @title-color;
 }
 
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
 p {
+	font-size: 1.4rem;
 	font-family: @main-font;
 	color: @main-color;
+	line-height: 1.2;
+}
+
+a {
+	font-size: 1.7rem;
+}
+
+.container {
+	width: 80%;
 }
 
 /*------------------------- NAV -------------------------*/
+
 nav {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	padding: 3%;
+
 	a {
 		text-decoration: none;
 		padding: 1%;
+		color: @title-color;
 	} //this is to close the a tags in nav
 } //this is to close the nav
+
 /*------------------------- HEADER -------------------------*/
 
+header {
+	background-color: @bg-color;
+	font-size: 1.6rem;
+	padding: 0 0 2% 4%;
+}
+
+header img {
+	width: 40%;
+	margin: 10% 0 0 0; // T R B L
+}
+
+header h1 {
+	margin: 0 0 3% 0;
+}
+
+header p {
+	color: @title-color;
+	margin: 0% 4% 3% 0;
+	padding: 3% 0 0 0;
+	border-top: 1px solid @main-color;
+}
+
+header button {
+	background-color: @alt-bg-color;
+	font-size: 1.8rem;
+	font-family: @main-font;
+	color: white;
+	padding: 1.5% 5%;
+	margin: 0 0 4% 0;
+	border: .1rem solid @alt-bg-color;
+	border-radius: .5rem;
+}
 
 /*------------------------- MAIN-CONTENT -------------------------*/
 
+.main-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 5% 0;
+}
+
+.main-content h2 {
+	padding: 0 0 3% 0;
+}
+
+.left {
+	width: 48%;
+}
+
+.right {
+	width: 48%;
+}
+
+.skills p {
+	border: .5px solid rgb(220, 220, 220);
+	padding: 2.5%;
+}
+
 
 /*------------------------- WORK-HISTORY -------------------------*/
+.work-history {
+	display: flex;
+}
 
+/*------------------------- CONTACT -------------------------*/
 
 /*------------------------- FOOTER -------------------------*/
 
