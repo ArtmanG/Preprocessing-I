@@ -57,6 +57,66 @@ html, body {
     height: 100%;
 }
 
-body {
-	background-color: orange;
+
+/*------------------------- UNIVERSAL -------------------------*/
+
+
+@main-color: rgb(141, 141, 141);
+@title-color: rgb(46, 46, 46);
+@main-font: 'Fira Sans', sans-serif;
+@title-font: 'Alata', sans-serif;
+
+.center(){
+	display: flex;
+	justify-content: center;
 }
+
+.bordered(){
+	border: 2px solid black;
+	padding: 2%;
+}
+
+.container {
+	width: 80%;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+ .center();
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @title-font;
+	color: @title-color;
+}
+
+p {
+	font-family: @main-font;
+	color: @main-color;
+}
+
+/*------------------------- NAV -------------------------*/
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 3%;
+	a {
+		text-decoration: none;
+		padding: 1%;
+	} //this is to close the a tags in nav
+} //this is to close the nav
+/*------------------------- HEADER -------------------------*/
+
+
+/*------------------------- MAIN-CONTENT -------------------------*/
+
+
+/*------------------------- WORK-HISTORY -------------------------*/
+
+
+/*------------------------- FOOTER -------------------------*/
+
