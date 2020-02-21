@@ -1,1 +1,408 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+/*------------------------- UNIVERSAL -------------------------*/
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Alata', sans-serif;
+  color: #000000;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.4rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: #2e2e2e;
+  line-height: 1.3;
+}
+li {
+  font-size: 1.6rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: #2e2e2e;
+}
+a {
+  font-size: 1.6rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: #2e2e2e;
+}
+.container {
+  width: 80%;
+}
+/*------------------------- NAV -------------------------*/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3% 0;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-between;
+  }
+}
+nav a {
+  text-decoration: none;
+  padding: 1%;
+  color: #000000;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.3rem;
+  }
+}
+/*------------------------- HEADER -------------------------*/
+header {
+  background-color: #c4d9ee;
+  padding: 4%;
+}
+header p {
+  color: #000000;
+  margin: 0% 4% 3% 0;
+  padding: 3% 0 0 0;
+  border-top: 1px solid #2e2e2e;
+  line-height: 1.5;
+}
+header button {
+  background-color: grey;
+  font-size: 1.8rem;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  padding: 1.5% 5%;
+  margin: 0 0 4% 0;
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+}
+header button:hover {
+  background-color: #9a9a9a;
+}
+.img-contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+@media (max-width: 500px) {
+  .img-contact {
+    flex-direction: column;
+    margin-bottom: 1%;
+  }
+}
+.img-contact img {
+  width: 100%;
+  margin: 10% 0 0 0;
+}
+@media (max-width: 500px) {
+  .img-contact img {
+    margin: 10% 0 0 75%;
+  }
+}
+.img-contact h1 {
+  margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .img-contact h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+  }
+}
+.img-contact .img {
+  width: 40%;
+}
+.img-contact .contact {
+  margin: 15% 0 10%;
+  line-height: 2;
+}
+@media (max-width: 500px) {
+  .img-contact .contact {
+    margin: 5% 0 2%;
+  }
+}
+.img-contact .contact h2 {
+  display: flex;
+  justify-content: center;
+}
+.img-contact .contact li {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .img-contact .contact li {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}
+.img-contact .contact a {
+  text-decoration: none;
+  color: #000000;
+}
+@media (max-width: 500px) {
+  .img-contact .contact a {
+    font-size: 1.4rem;
+  }
+}
+/*------------------------- MAIN-CONTENT -------------------------*/
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 4% 0;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
+.main-content h2 {
+  padding: 0 0 3% 0;
+}
+@media (max-width: 500px) {
+  .main-content h2 {
+    padding: 5% 0;
+    text-align: center;
+  }
+}
+.main-content .left p {
+  line-height: 2.4;
+}
+@media (max-width: 500px) {
+  .main-content .left p {
+    line-height: 2;
+  }
+}
+.main-content .left,
+.main-content .right {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .main-content .left,
+  .main-content .right {
+    width: 100%;
+  }
+}
+.main-content .skills p {
+  border: 0.5px solid #dcdcdc;
+  padding: 1%;
+  padding: 3% 7%;
+}
+@media (max-width: 500px) {
+  .main-content .right {
+    margin-bottom: 5%;
+  }
+}
+/*------------------------- WORK-HISTORY -------------------------*/
+.work-history h2 {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  border-top: 1px solid black;
+}
+@media (max-width: 500px) {
+  .work-history h2 {
+    padding: 7% 0 5%;
+  }
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+}
+.box {
+  width: 24%;
+  border: 0.5px solid #dcdcdc;
+  padding: 1%;
+  border-radius: 10%;
+  background-color: #c4d9ee;
+}
+@media (max-width: 500px) {
+  .box {
+    width: 100%;
+    padding: 5%;
+    margin: 2%;
+  }
+}
+.box h3 {
+  display: flex;
+  justify-content: center;
+}
+.box p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1%;
+}
+.box li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0 0 0 5%;
+}
+/*------------------------- FOOTER -------------------------*/
+footer {
+  background-color: grey;
+  text-align: center;
+  margin: 3% 0 0;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin: 6% 0 0;
+    padding: 4%;
+  }
+}
